@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.12.3
+%define		kdeappsver	26.04.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		audiocd-kio
 Summary:	Audio CD kio
 Name:		ka6-%{kaname}
-Version:	25.12.3
-Release:	2
+Version:	26.04.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	9262fe5d57a24f02e0f02e99e9014b81
+# Source0-md5:	5d07e31b8c3daa4f1437e02e64276ffb
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -21,7 +21,6 @@ BuildRequires:	cdparanoia-III-devel
 BuildRequires:	cmake >= 3.20
 BuildRequires:	gettext-devel
 BuildRequires:	ka6-libkcddb-devel >= %{kdeappsver}
-BuildRequires:	ka6-libkcompactdisc-devel >= %{kdeappsver}
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
 BuildRequires:	kf6-kcmutils-devel >= %{kframever}
 BuildRequires:	kf6-kconfig-devel >= %{kframever}
